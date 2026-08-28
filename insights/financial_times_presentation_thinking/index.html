@@ -73,12 +73,14 @@
     </div>
     <div class="legal">
       <span>© 2026 To The Point at Work — T.T.P. International Ltd</span>
-      <span><a href="/contact/">info@ttpaw.com</a></span>
+      <span><a class="mailme" href="/contact/"></a></span>
     </div>
   </div>
 </footer>
 
 <script>
+(function(){var u="info",d="ttpaw",t="com",m=u+"@"+d+"."+t;
+document.querySelectorAll("a.mailme").forEach(function(a){a.textContent=m;a.href="mailto:"+m;});})();
 document.querySelectorAll("nav.main a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav.main").classList.remove("open")));
 </script>
 </body>

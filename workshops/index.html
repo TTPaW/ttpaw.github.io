@@ -106,7 +106,7 @@
   <div class="wrap">
     <h2>A subject we should design for you?</h2>
     <p class="lead">Describe the audience and the challenge — we'll propose the format that fits, honestly.</p>
-    <p class="mail"><a href="#" onclick="this.href='mailto:'+'info'+'@'+'ttpaw.com'">info@ttpaw.com</a></p>
+    <p class="mail"><a class="mailme" href="/contact/"></a></p>
   </div>
 </section>
 
@@ -129,12 +129,14 @@
     </div>
     <div class="legal">
       <span>© 2026 To The Point at Work — T.T.P. International Ltd</span>
-      <span><a href="/contact/">info@ttpaw.com</a></span>
+      <span><a class="mailme" href="/contact/"></a></span>
     </div>
   </div>
 </footer>
 
 <script>
+(function(){var u="info",d="ttpaw",t="com",m=u+"@"+d+"."+t;
+document.querySelectorAll("a.mailme").forEach(function(a){a.textContent=m;a.href="mailto:"+m;});})();
 document.querySelectorAll("nav.main a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav.main").classList.remove("open")));
 </script>
 </body>
