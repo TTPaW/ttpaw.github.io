@@ -13,7 +13,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--b);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--red);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
@@ -24,7 +24,7 @@ h3{font-size:19px;font-weight:700}
 .eyebrow{font-family:var(--h);font-weight:700;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
 .lead{font-size:clamp(17px,1.9vw,19px);color:var(--ink-soft);max-width:60ch}
 section{padding:76px 0}
-@media(max-width:720px){section{padding:52px 0}}
+@media(max-width:720px){section{padding:40px 0}}
 
 /* header */
 header{position:sticky;top:0;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
@@ -58,7 +58,7 @@ nav.main a.on{color:var(--red)}
 @media(max-width:860px){
   .hgrid{grid-template-columns:1fr;gap:36px}
   .hero{padding:44px 0 36px}
-  .hero-draw{max-width:340px;margin:0 auto}
+  .hero-draw{max-width:250px;margin:0 auto}
 }
 
 /* inner page hero */
@@ -72,13 +72,13 @@ nav.main a.on{color:var(--red)}
 .tgrid img{border-radius:12px}
 .tgrid img.draw{mix-blend-mode:multiply;border-radius:0}
 .tgrid.flip{grid-template-columns:.9fr 1.1fr}
-@media(max-width:860px){.tgrid,.tgrid.flip{grid-template-columns:1fr;gap:32px}.tgrid img{max-width:440px;margin:0 auto}}
+@media(max-width:860px){.tgrid,.tgrid.flip{grid-template-columns:1fr;gap:26px}.tgrid img{max-width:320px;margin:0 auto}}
 
 /* evidence / stats */
 .bgwarm{background:var(--warm)}
 .egrid{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:center;margin-top:36px}
 .egrid img{border-radius:12px;mix-blend-mode:multiply}
-@media(max-width:860px){.egrid{grid-template-columns:1fr;gap:32px}.egrid img{max-width:440px;margin:0 auto}}
+@media(max-width:860px){.egrid{grid-template-columns:1fr;gap:26px}.egrid img{max-width:300px;margin:0 auto}}
 .stats{display:grid;grid-template-columns:1fr;gap:26px}
 .stat b{display:block;font-family:var(--h);font-size:clamp(42px,5vw,60px);font-weight:800;color:var(--red);line-height:1}
 .stat p{margin-top:10px;color:var(--ink);font-size:15.5px;max-width:30ch}
